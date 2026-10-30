@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#171717" />
+  <title>Andaaz.store | Shop Your Style</title>
+  <meta name="description" content="Discover fashion, lifestyle and everyday essentials at Andaaz.store." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">WELCOME TO ANDAAZ.STORE <span>•</span> STYLE THAT SPEAKS</div>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">A</span><span>ANDAAZ<span class="brand-dot">.</span><small>STORE</small></span></a>
+    <form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products"><button aria-label="Search">⌕</button></form>
+    <div class="header-actions"><button class="icon-btn" id="accountBtn" aria-label="Account">♙</button><button class="cart-btn" id="cartOpen">Bag <span id="cartCount">0</span></button></div>
+  </header>
+  <nav class="nav"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#why-us">Why Andaaz</a></nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy"><p class="eyebrow">THE EVERYDAY EDIT</p><h1>Find your<br><em>own Andaaz.</em></h1><p class="hero-text">Fresh finds, thoughtful details and everyday essentials — all in one place.</p><a class="primary-btn" href="#shop">Explore collection <span>→</span></a><div class="hero-note">CURATED FOR YOUR LIFESTYLE</div></div>
+      <div class="hero-art"><div class="hero-circle"></div><div class="hero-label">NEW<br>SEASON<br><b>2026</b></div><div class="hero-product">A<span>✦</span></div><div class="floating-card">YOUR STYLE<br><b>YOUR RULES.</b></div></div>
+    </section>
+
+    <section class="trust-strip"><div><b>✦</b> Carefully selected products</div><div><b>↗</b> Easy ordering</div><div><b>♡</b> Made for your style</div></section>
+
+    <section class="section" id="categories"><div class="section-heading"><div><p class="eyebrow">BROWSE YOUR WAY</p><h2>Shop by category</h2></div><span class="muted">A little something for everyone.</span></div>
+      <div class="category-grid">
+        <button class="category-card cat-fashion" data-category="Fashion"><span>01 / STYLE</span><b>Fashion</b><i>Explore →</i></button>
+        <button class="category-card cat-lifestyle" data-category="Lifestyle"><span>02 / LIVING</span><b>Lifestyle</b><i>Explore →</i></button>
+        <button class="category-card cat-accessories" data-category="Accessories"><span>03 / DETAILS</span><b>Accessories</b><i>Explore →</i></button>
+        <button class="category-card cat-essentials" data-category="Essentials"><span>04 / DAILY</span><b>Essentials</b><i>Explore →</i></button>
+      </div>
+    </section>
+
+    <section class="section shop-section" id="shop"><div class="section-heading"><div><p class="eyebrow">THE ANDAAZ SELECTION</p><h2>Featured products</h2></div><span class="muted" id="resultCount">Handpicked for you</span></div>
+      <div class="filters"><button class="filter active" data-filter="All">All items</button><button class="filter" data-filter="Fashion">Fashion</button><button class="filter" data-filter="Lifestyle">Lifestyle</button><button class="filter" data-filter="Accessories">Accessories</button><button class="filter" data-filter="Essentials">Essentials</button></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="promo"><div><p class="eyebrow">A BETTER WAY TO SHOP</p><h2>Good finds.<br><em>Great feeling.</em></h2><p>Discover pieces that fit your life and your personal style.</p><a href="#shop" class="light-btn">Shop the edit →</a></div><div class="promo-stamp">ANDAAZ<br><b>EST. 2026</b></div></section>
+
+    <section class="section why-section" id="why-us"><p class="eyebrow">THE ANDAAZ PROMISE</p><h2>Shopping, made simple.</h2><div class="why-grid"><div><b>01</b><h3>Curated choices</h3><p>Explore a growing selection of useful and stylish finds.</p></div><div><b>02</b><h3>Easy ordering</h3><p>Add your favourites to the bag and send your order request.</p></div><div><b>03</b><h3>Personal service</h3><p>Have a question? Get in touch before placing your order.</p></div></div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">A</span><span>ANDAAZ<span class="brand-dot">.</span><small>STORE</small></span></a><p>Find your own Andaaz.</p><small>© 2026 Andaaz.store. All rights reserved.</small></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag"><div class="drawer-head"><h2>Your bag</h2><button id="cartClose" class="close-btn">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-bottom"><div class="total-row"><span>Subtotal</span><b id="cartTotal">Rs. 0</b></div><p class="cart-hint">Delivery charges, if any, will be confirmed with you.</p><button class="primary-btn checkout-btn" id="checkoutBtn">Order on WhatsApp →</button></div></aside>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
